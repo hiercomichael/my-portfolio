@@ -5,7 +5,7 @@ function About(){
     <div className="about-container">
       <div className="about-square"></div>
       <div className="about-skills">
-        <img src="/img/about.png" className="about-img" alt="" />
+        <img src="./img/about.png" className="about-img" alt="" />
       </div>
       <div className="about-text-big-container">
         <div className="about-text-container">

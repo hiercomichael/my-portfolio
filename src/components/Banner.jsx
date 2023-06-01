@@ -7,9 +7,9 @@ function Banner(){
     I'm Michael, a versatile professional specializing in Web Development, Programming, and Design.
     </div>
     <div className="banner-image-container">
-      <img src="/img/banner-image.png" alt="" className="banner-image" />
+      <img src="./img/banner-image.png" alt="" className="banner-image" />
     </div>
-    <img src="/img/banner-bg.png" alt="" className="banner-bg" />
+    <img src="./img/banner-bg.png" alt="" className="banner-bg" />
   </div>
 }
 
