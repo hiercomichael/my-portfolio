@@ -1,5 +1,6 @@
 import react, {useState} from "react";
 import Menu from "./Menu";
+import Hamburger from 'hamburger-react';
 
 function Header(){
 
@@ -13,6 +14,8 @@ function Header(){
     )
   }
 
+  const [isOpen, setOpen] = useState(false);
+
   window.addEventListener("scroll", changeColor);
 
   return <header className={color ? "header header-bg" : "header"}>
@@ -24,11 +27,23 @@ function Header(){
           </a>
         </div>
         <div className="menu-container">
-          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="About" link="#boi"/>
-          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="Works" link="#boi"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="HOME" link="#boi"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="SERVICES" link="#boi"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="SKILLS" link="#boi"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="WORKS" link="#boi"/>
+        </div>
+        <div className="header-solo">
+          <Menu class={"menu-selection-solo"} name="CONTACT NOW" link="#boi"/>
+        </div>
+        <Hamburger size={40} toggled={isOpen} toggle={setOpen} />
+        <div className={isOpen ? "menu-mobile-container menu-mobile-container--clicked" : "menu-mobile-container"}>
+          <a href="#boi" className="menu-mobile">HOME</a>
+          <a href="#boi" className="menu-mobile">SERVICES</a>
+          <a href="#boi" className="menu-mobile">SKILLS</a>
+          <a href="#boi" className="menu-mobile">WORKS</a>
         </div>
       </div>
-      <Menu class={color ? "header-solo header-solo-bg" : "header-solo"} name="Contacts" link="#about"/>
+
     </div>
 
   </header>

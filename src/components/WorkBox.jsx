@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function WorkBox({href, title, img, bgColorClass, arrowClass}) {
+function WorkBox({href, title, img, description}) {
 
   const [hover, setHover] = useState(false);
 
@@ -13,11 +13,21 @@ function WorkBox({href, title, img, bgColorClass, arrowClass}) {
     setHover(false);
   }
 
-  return <a href= {href} onMouseOver = {handleMouseOver} onMouseOut = {handleMouseOut} className={hover ? `works-box works-box--hovering`: `works-box ${bgColorClass}`}>
-  <div className={hover ? "work-title work-title--hovering" : "work-title"}>{title}</div>
-  <img src={img} className={hover ? "work-img work-img--hover" : "work-img"} alt="" />
-  <img src="/img/work-arrow.png" alt="" className={hover ? `work-arrow work-arrow--hover ${arrowClass}` : `work-arrow ${arrowClass}`}/>
-</a>
+  return <div className="work-container">
+      <div className="work-img-container">
+        <div className="work-img" style={{backgroundImage:`url(${img})`}}></div>
+      </div>
+      <div className="work-desc-big-container">
+        <div className="work-desc-container">
+          <div className="work-desc-title">{title}</div>
+          <div className="work-description">{description}</div>
+        </div>
+        <div className="work-status-container">
+          <a href={href} className="work-link">Visit Project</a>
+        </div>
+      </div>
+  </div>
+
   
 
 }

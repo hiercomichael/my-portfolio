@@ -1,32 +1,28 @@
 import react, {useState} from "react";
 import WorkBox from "./WorkBox";
+import Title from "./Title";
+
+const myWorks = [
+  {
+    img: "./img/work-1.jpg",
+    title: "Better Health - Application Design",
+    description: "Better Health is an application that we made for our school project."
+  },
+  {
+    img: "./img/work-2.jpg",
+    title: "World Cup 2077 - Java Development",
+    description: "A simple football pixel game that runs in Java language"
+  },
+];
 
 function Works(){
 
-  const [hover, setHover] = useState(false);
-
-
-  function handleMouseOver() {
-    setHover(true);
-  }
-
-  function handleMouseOut() {
-    setHover(false);
-  }
-
-
   return <div className="works">
-    <hr className="works-hr" />
-    <div className="works-title">WORKS</div>
+    <Title title="WORKS" />
     <div className="works-container">
-      <div className="works-first-container">
-        <WorkBox img="/img/works-1.png" title="WEB DEVELOPMENT" bgColorClass="works-box--first"/>
-        <WorkBox img="/img/works-2.png" title="UI / UX DESIGN" bgColorClass="works-box--second" arrowClass="work-arrow--second"/>
-      </div>
-      <div className="works-first-container works-first-container--second">
-        <WorkBox img="/img/works-3.png" href="#" title="GAME DEVELOPMENT" bgColorClass="works-box--third"/>
-        <WorkBox img="/img/works-4.png" title="PROJECT MANAGEMENT" bgColorClass="works-box--fourth" arrowClass="work-arrow--second"/>
-      </div>
+      {myWorks.map(work => 
+              <WorkBox {...work} />
+            )}
     </div>
   </div>
 }
