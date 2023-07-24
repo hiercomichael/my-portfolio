@@ -23,7 +23,7 @@ function Header(){
       <div className="header-left-container">
         <div className="logo-container">
           <a href="#" className="logo">
-            <img src="/img/logo.png" alt="" className={color ? "logo-image logo-image-color" : "logo-image"} />
+            <img src="./img/logo.png" alt="" className={color ? "logo-image logo-image-color" : "logo-image"} />
           </a>
         </div>
         <div className="menu-container">
