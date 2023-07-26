@@ -82,7 +82,7 @@ function Skills() {
   };
 
   return <>
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="skills-bg"></div>
       <div className="skills-title">Skills</div>
       <div className="skills-container">

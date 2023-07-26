@@ -17,7 +17,7 @@ const myWorks = [
 
 function Works(){
 
-  return <div className="works">
+  return <div className="works" id="works">
     <Title title="WORKS" />
     <div className="works-container">
       {myWorks.map(work => 

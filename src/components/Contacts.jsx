@@ -16,7 +16,7 @@ function Contacts(){
   }
 
 
-  return <footer className="footer">
+  return <footer className="footer" id="contact">
     <div onMouseOver = {handleMouseOver} onMouseOut = {handleMouseOut} className="footer-container">
       <img src="./img/email.png" alt="" className={hover ? "footer-img footer-img--hover" : "footer-img"} />
       <img src="./img/email-hand.png" alt="" className={hover ? "footer-img footer-img--hand footer-img--hover" : "footer-img footer-img--hand"} />

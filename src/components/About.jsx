@@ -28,8 +28,8 @@ function About(){
           </div>
         </div>
         <div className="about-button-container">
-          <a href="" className="about-button">About Me</a>
-          <a href="" className="about-button">Contact Now</a>
+          <a href="" className="about-button" >About Me</a>
+          <a href="#contact" className="about-button">Contact Now</a>
         </div>  
       </div>
     </div>

@@ -54,6 +54,7 @@ $pixel : 'VT323', monospace;
 
   @media only screen and (max-width: 959px){
     top: 0;
+    background-color: white;
     }
 }
 
@@ -142,7 +143,7 @@ $pixel : 'VT323', monospace;
     right: -100%;
 
     &--clicked {
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 1 );
       right: 0;
       width: 65%;
       transition: .3s ease-in; 
@@ -569,6 +570,7 @@ $pixel : 'VT323', monospace;
   &--show {
     transition:  .4s ease-in; 
     opacity: 1;
+    padding: 10px 25px 25px;
   }
 }
 
@@ -603,10 +605,11 @@ $pixel : 'VT323', monospace;
   background-image: linear-gradient(#fff7ed,#fff7ed, white);
   position: relative;
   margin-bottom: 200px;
+  padding-top: 50px;
 
   
   @media only screen and (max-width: 959px){
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 
@@ -834,6 +837,11 @@ $pixel : 'VT323', monospace;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  
+  @media only screen and (max-width: 768px){ 
+    flex-direction: column;
+  }
 }
 
 .work-desc-container {
@@ -872,6 +880,11 @@ $pixel : 'VT323', monospace;
 
 .work-status-container {
   text-align: end;
+
+  @media only screen and (max-width: 768px){
+    margin: 20px;
+  }
+
 }
 
 
@@ -980,8 +993,9 @@ $pixel : 'VT323', monospace;
   position: relative;
 
   @media only screen and (max-width: 768px){
-    margin: 2% 10%;
-    padding: 10px 10px 50px 10px;
+    margin: 0;
+    padding: 30px 20px 60px;
+    border-radius: 0;
     
   }
 }
@@ -1004,9 +1018,8 @@ $pixel : 'VT323', monospace;
 }
 
 .copyright {
-  font-family: $pt;
-  border-top: 1px solid black;
-  padding: 5px 0;
+  font-family: $public;
+  padding: 15px 0;
   color: white;
   background: #1D3557;
   text-align: center;

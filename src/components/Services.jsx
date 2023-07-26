@@ -3,7 +3,7 @@ import Title from "./Title";
 import ServicesBox from "./ServicesBox";
 
 function Services(){
-  return <div className="services">
+  return <div className="services" id="services">
       <Title title="SERVICES" />
       <div className="services-container">
         <ServicesBox servicesTitle= "Web Development" servicesDesc="Offering professional web development services to create visually stunning and functional websites and web applications tailored to your needs"/>

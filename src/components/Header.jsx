@@ -27,20 +27,20 @@ function Header(){
           </a>
         </div>
         <div className="menu-container">
-          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="HOME" link="#boi"/>
-          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="SERVICES" link="#boi"/>
-          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="SKILLS" link="#boi"/>
-          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="WORKS" link="#boi"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="HOME" link="#"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="SERVICES" link="#services"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="SKILLS" link="#skills"/>
+          <Menu class={color ? "menu-selection menu-selection-color" : "menu-selection"} name="WORKS" link="#works"/>
         </div>
         <div className="header-solo">
-          <Menu class={"menu-selection-solo"} name="CONTACT NOW" link="#boi"/>
+          <Menu class={"menu-selection-solo"} name="CONTACT NOW" link="#contact"/>
         </div>
         <Hamburger size={40} toggled={isOpen} toggle={setOpen} />
         <div className={isOpen ? "menu-mobile-container menu-mobile-container--clicked" : "menu-mobile-container"}>
-          <a href="#boi" className="menu-mobile">HOME</a>
-          <a href="#boi" className="menu-mobile">SERVICES</a>
-          <a href="#boi" className="menu-mobile">SKILLS</a>
-          <a href="#boi" className="menu-mobile">WORKS</a>
+          <a href="#" className="menu-mobile">HOME</a>
+          <a href="#services" className="menu-mobile">SERVICES</a>
+          <a href="#skills" className="menu-mobile">SKILLS</a>
+          <a href="#works" className="menu-mobile">WORKS</a>
         </div>
       </div>
 
