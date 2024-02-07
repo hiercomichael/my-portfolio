@@ -7,7 +7,7 @@ import Skills from "./components/Skills"
 import Works from "./components/Works"
 import Contacts from "./components/Contacts"
 import School from "./components/School"
-import "./style.scss";
+import "./style.scss"
 import Recommendations from "./components/Recommendations"
 
 function App() {

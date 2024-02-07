@@ -1,6 +1,5 @@
 {
   "name": "my-app",
-  "homepage": "https://hiercomichael.github.io/my-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
