@@ -6,12 +6,14 @@ const myWorks = [
   {
     img: "./img/work-1.jpg",
     title: "Better Health - Application Design",
-    description: "Better Health is an application that we made for our school project."
+    description: "Better Health is an application that we made for our school project.",
+    href: "https://www.figma.com/file/2k06E2gDOOThFGP3yvh4yO/Untitled?type=design&node-id=0%3A1&mode=design&t=iy5W4pxMu0txQe5m-1"
   },
   {
     img: "./img/work-2.jpg",
     title: "World Cup 2077 - Java Development",
-    description: "A simple football pixel game that runs in Java language"
+    description: "A simple football pixel game that runs in Java language",
+    href: "https://github.com/hiercomichael/soccergame"
   },
 ];
 

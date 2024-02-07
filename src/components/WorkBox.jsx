@@ -23,7 +23,7 @@ function WorkBox({href, title, img, description}) {
           <div className="work-description">{description}</div>
         </div>
         <div className="work-status-container">
-          <a href={href} className="work-link">Visit Project</a>
+          <a href={href} target="_blank" className="work-link">Visit Project</a>
         </div>
       </div>
   </div>
